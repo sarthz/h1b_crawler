@@ -1,0 +1,29 @@
+[2022-08-23 15:46:11,101] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data.download_data_task scheduled__2021-07-10T06:00:00+00:00 [queued]>
+[2022-08-23 15:46:11,116] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data.download_data_task scheduled__2021-07-10T06:00:00+00:00 [queued]>
+[2022-08-23 15:46:11,117] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-23 15:46:11,118] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-08-23 15:46:11,119] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-23 15:46:11,134] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_data_task> on 2021-07-10 06:00:00+00:00
+[2022-08-23 15:46:11,146] {standard_task_runner.py:52} INFO - Started process 112 to run task
+[2022-08-23 15:46:11,151] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data', 'download_data_task', 'scheduled__2021-07-10T06:00:00+00:00', '--job-id', '244', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpys20c9we', '--error-file', '/tmp/tmpjwgvlfoh']
+[2022-08-23 15:46:11,152] {standard_task_runner.py:77} INFO - Job 244: Subtask download_data_task
+[2022-08-23 15:46:11,252] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data.download_data_task scheduled__2021-07-10T06:00:00+00:00 [running]> on host 7dedb8b41d8d
+[2022-08-23 15:46:11,312] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-23 15:46:11,343] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-07-10T06:00:00+00:00
+[2022-08-23 15:46:11,346] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-23 15:46:11,348] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2021Q7.xlsx > /opt/***/LCA_Disclosure_Data_FY2021Q7.xlsx']
+[2022-08-23 15:46:11,364] {subprocess.py:85} INFO - Output:
+[2022-08-23 15:46:13,951] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-08-23 15:46:14,015] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data, task_id=download_data_task, execution_date=20210710T060000, start_date=20220823T154611, end_date=20220823T154614
+[2022-08-23 15:46:14,099] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-23 15:46:14,171] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

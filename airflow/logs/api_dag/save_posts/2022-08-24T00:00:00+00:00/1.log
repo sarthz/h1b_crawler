@@ -1,0 +1,22 @@
+[2022-08-25 18:53:01,471] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: api_dag.save_posts scheduled__2022-08-24T00:00:00+00:00 [queued]>
+[2022-08-25 18:53:01,528] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: api_dag.save_posts scheduled__2022-08-24T00:00:00+00:00 [queued]>
+[2022-08-25 18:53:01,531] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 18:53:01,532] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-25 18:53:01,535] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 18:53:01,588] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): save_posts> on 2022-08-24 00:00:00+00:00
+[2022-08-25 18:53:01,602] {standard_task_runner.py:52} INFO - Started process 83 to run task
+[2022-08-25 18:53:01,632] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'api_dag', 'save_posts', 'scheduled__2022-08-24T00:00:00+00:00', '--job-id', '274', '--raw', '--subdir', 'DAGS_FOLDER/api_dag.py', '--cfg-path', '/tmp/tmpa17ib232', '--error-file', '/tmp/tmpb99ru1rt']
+[2022-08-25 18:53:01,641] {standard_task_runner.py:77} INFO - Job 274: Subtask save_posts
+[2022-08-25 18:53:01,783] {logging_mixin.py:109} INFO - Running <TaskInstance: api_dag.save_posts scheduled__2022-08-24T00:00:00+00:00 [running]> on host 7dedb8b41d8d
+[2022-08-25 18:53:01,923] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=api_dag
+AIRFLOW_CTX_TASK_ID=save_posts
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-24T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-24T00:00:00+00:00
+[2022-08-25 18:53:01,954] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-25 18:53:02,008] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=api_dag, task_id=save_posts, execution_date=20220824T000000, start_date=20220825T185301, end_date=20220825T185302
+[2022-08-25 18:53:02,126] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-25 18:53:02,338] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,2 +1,5 @@
 apache-airflow-providers-google
 pyarrow
+openpyxl
+xlrd
+pandas

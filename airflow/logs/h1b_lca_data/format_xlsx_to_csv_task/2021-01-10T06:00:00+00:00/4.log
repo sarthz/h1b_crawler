@@ -1,0 +1,74 @@
+[2022-08-25 19:13:47,347] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data.format_xlsx_to_csv_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-25 19:13:47,361] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data.format_xlsx_to_csv_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-25 19:13:47,363] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 19:13:47,363] {taskinstance.py:1239} INFO - Starting attempt 4 of 4
+[2022-08-25 19:13:47,364] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-25 19:13:47,378] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_xlsx_to_csv_task> on 2021-01-10 06:00:00+00:00
+[2022-08-25 19:13:47,385] {standard_task_runner.py:52} INFO - Started process 428 to run task
+[2022-08-25 19:13:47,390] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data', 'format_xlsx_to_csv_task', 'scheduled__2021-01-10T06:00:00+00:00', '--job-id', '287', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpbbi09li6', '--error-file', '/tmp/tmppqjzhvjq']
+[2022-08-25 19:13:47,391] {standard_task_runner.py:77} INFO - Job 287: Subtask format_xlsx_to_csv_task
+[2022-08-25 19:13:47,468] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data.format_xlsx_to_csv_task scheduled__2021-01-10T06:00:00+00:00 [running]> on host 15b680750b5e
+[2022-08-25 19:13:47,525] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-25 19:13:47,558] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data
+AIRFLOW_CTX_TASK_ID=format_xlsx_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-10T06:00:00+00:00
+[2022-08-25 19:13:47,560] {logging_mixin.py:109} INFO - Filed downloaded at: /opt/***/LCA_Disclosure_Data_FY{{ execution_date.strftime('%Y') }}Q{{ execution_date.strftime('%-m') }}.xlsx
+[2022-08-25 19:13:47,561] {logging_mixin.py:109} INFO - Source file:  /opt/***/LCA_Disclosure_Data_FY2021Q1.xlsx
+[2022-08-25 19:13:47,562] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/upload_h1b_data_to_gcp.py", line 64, in format_xlsx_to_csv
+    csv_df = pd.read_xlsx(src_file)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 244, in __getattr__
+    raise AttributeError(f"module 'pandas' has no attribute '{name}'")
+AttributeError: module 'pandas' has no attribute 'read_xlsx'
+[2022-08-25 19:13:47,587] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=h1b_lca_data, task_id=format_xlsx_to_csv_task, execution_date=20210110T060000, start_date=20220825T191347, end_date=20220825T191347
+[2022-08-25 19:13:47,603] {standard_task_runner.py:92} ERROR - Failed to execute job 287 for task format_xlsx_to_csv_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/upload_h1b_data_to_gcp.py", line 64, in format_xlsx_to_csv
+    csv_df = pd.read_xlsx(src_file)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 244, in __getattr__
+    raise AttributeError(f"module 'pandas' has no attribute '{name}'")
+AttributeError: module 'pandas' has no attribute 'read_xlsx'
+[2022-08-25 19:13:47,645] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-08-25 19:13:47,693] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
