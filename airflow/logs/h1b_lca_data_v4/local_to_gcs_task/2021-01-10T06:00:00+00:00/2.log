@@ -1,0 +1,26 @@
+[2022-08-29 19:02:22,635] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.local_to_gcs_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 19:02:22,655] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.local_to_gcs_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 19:02:22,657] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 19:02:22,657] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-08-29 19:02:22,658] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 19:02:22,676] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2021-01-10 06:00:00+00:00
+[2022-08-29 19:02:22,684] {standard_task_runner.py:52} INFO - Started process 6304 to run task
+[2022-08-29 19:02:22,690] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v4', 'local_to_gcs_task', 'scheduled__2021-01-10T06:00:00+00:00', '--job-id', '1700', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmprkq3cc6t', '--error-file', '/tmp/tmp4ndqedr1']
+[2022-08-29 19:02:22,691] {standard_task_runner.py:77} INFO - Job 1700: Subtask local_to_gcs_task
+[2022-08-29 19:02:22,772] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v4.local_to_gcs_task scheduled__2021-01-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 19:02:22,830] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-29 19:02:22,888] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v4
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-10T06:00:00+00:00
+[2022-08-29 19:02:22,891] {logging_mixin.py:109} INFO - Source file to be fetched to upload to GCS:  /opt/***/LCA_Disclosure_Data_FY2021_Q1.parquet
+[2022-08-29 19:02:36,009] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-29 19:02:36,027] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data_v4, task_id=local_to_gcs_task, execution_date=20210110T060000, start_date=20220829T190222, end_date=20220829T190236
+[2022-08-29 19:02:36,062] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-29 19:02:36,104] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

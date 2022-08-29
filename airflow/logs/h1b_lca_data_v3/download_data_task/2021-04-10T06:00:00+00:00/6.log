@@ -1,0 +1,76 @@
+[2022-08-29 18:21:49,724] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.download_data_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:21:49,745] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.download_data_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:21:49,746] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:21:49,748] {taskinstance.py:1239} INFO - Starting attempt 6 of 6
+[2022-08-29 18:21:49,749] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:21:49,771] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_data_task> on 2021-04-10 06:00:00+00:00
+[2022-08-29 18:21:49,799] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v3', 'download_data_task', 'scheduled__2021-04-10T06:00:00+00:00', '--job-id', '1634', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpbehylzwn', '--error-file', '/tmp/tmpizqcwpsi']
+[2022-08-29 18:21:49,792] {standard_task_runner.py:52} INFO - Started process 4347 to run task
+[2022-08-29 18:21:49,806] {standard_task_runner.py:77} INFO - Job 1634: Subtask download_data_task
+[2022-08-29 18:21:49,905] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v3.download_data_task scheduled__2021-04-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 18:21:49,957] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-29 18:21:49,984] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v3
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-10T06:00:00+00:00
+[2022-08-29 18:21:49,988] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-29 18:21:49,990] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2021_Q+{ params.quarter } > /opt/***/LCA_Disclosure_Data_FY2021_Q+{ params.quarter }']
+[2022-08-29 18:21:50,011] {subprocess.py:85} INFO - Output:
+[2022-08-29 18:21:50,038] {subprocess.py:89} INFO - curl: (3) unmatched brace in URL position 83:
+[2022-08-29 18:21:50,040] {subprocess.py:89} INFO - https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2021_Q+{
+[2022-08-29 18:21:50,041] {subprocess.py:89} INFO -                                                                                   ^
+[2022-08-29 18:21:50,203] {subprocess.py:89} INFO - curl: (6) Could not resolve host: params.quarter
+[2022-08-29 18:21:50,205] {subprocess.py:89} INFO - curl: (3) unmatched close brace/bracket in URL position 1:
+[2022-08-29 18:21:50,207] {subprocess.py:89} INFO - }
+[2022-08-29 18:21:50,208] {subprocess.py:89} INFO -  ^
+[2022-08-29 18:21:50,221] {subprocess.py:89} INFO - curl: (6) Could not resolve host: params.quarter
+[2022-08-29 18:21:50,227] {subprocess.py:89} INFO - curl: (3) unmatched close brace/bracket in URL position 1:
+[2022-08-29 18:21:50,230] {subprocess.py:89} INFO - }
+[2022-08-29 18:21:50,232] {subprocess.py:89} INFO -  ^
+[2022-08-29 18:21:50,234] {subprocess.py:93} INFO - Command exited with return code 3
+[2022-08-29 18:21:50,274] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 3.
+[2022-08-29 18:21:50,297] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=h1b_lca_data_v3, task_id=download_data_task, execution_date=20210410T060000, start_date=20220829T182149, end_date=20220829T182150
+[2022-08-29 18:21:50,353] {standard_task_runner.py:92} ERROR - Failed to execute job 1634 for task download_data_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 3.
+[2022-08-29 18:21:50,401] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-08-29 18:21:50,518] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

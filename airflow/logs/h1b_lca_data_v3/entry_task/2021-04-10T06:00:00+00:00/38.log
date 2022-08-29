@@ -1,0 +1,89 @@
+[2022-08-29 16:35:20,889] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 16:35:20,903] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 16:35:20,905] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 16:35:20,905] {taskinstance.py:1239} INFO - Starting attempt 38 of 38
+[2022-08-29 16:35:20,906] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 16:35:20,921] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): entry_task> on 2021-04-10 06:00:00+00:00
+[2022-08-29 16:35:20,929] {standard_task_runner.py:52} INFO - Started process 14384 to run task
+[2022-08-29 16:35:20,935] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v3', 'entry_task', 'scheduled__2021-04-10T06:00:00+00:00', '--job-id', '1576', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmp9ihmft_y', '--error-file', '/tmp/tmpz1oney3i']
+[2022-08-29 16:35:20,937] {standard_task_runner.py:77} INFO - Job 1576: Subtask entry_task
+[2022-08-29 16:35:21,026] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [running]> on host efb24f1b01c6
+[2022-08-29 16:35:21,084] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1418, in _execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1992, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1061, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1074, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1113, in render_template
+    return render_template_to_string(template, context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 268, in render_template_to_string
+    return render_template(template, context, native=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 263, in render_template
+    return "".join(nodes)
+  File "<template>", line 14, in root
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 349, in call
+    return __obj(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/macros/__init__.py", line 66, in ds_format
+    return datetime.strptime(str(ds), input_format).strftime(output_format)
+  File "/usr/local/lib/python3.7/_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/local/lib/python3.7/_strptime.py", line 362, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: T06:00:00+00:00
+[2022-08-29 16:35:21,105] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=h1b_lca_data_v3, task_id=entry_task, execution_date=20210410T060000, start_date=20220829T163520, end_date=20220829T163521
+[2022-08-29 16:35:21,126] {standard_task_runner.py:92} ERROR - Failed to execute job 1576 for task entry_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1418, in _execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1992, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1061, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1074, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1113, in render_template
+    return render_template_to_string(template, context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 268, in render_template_to_string
+    return render_template(template, context, native=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 263, in render_template
+    return "".join(nodes)
+  File "<template>", line 14, in root
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 349, in call
+    return __obj(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/macros/__init__.py", line 66, in ds_format
+    return datetime.strptime(str(ds), input_format).strftime(output_format)
+  File "/usr/local/lib/python3.7/_strptime.py", line 577, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/local/lib/python3.7/_strptime.py", line 362, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: T06:00:00+00:00
+[2022-08-29 16:35:21,151] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-08-29 16:35:21,196] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

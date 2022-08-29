@@ -1,0 +1,24 @@
+[2022-08-29 17:00:39,605] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 17:00:39,627] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 17:00:39,629] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 17:00:39,630] {taskinstance.py:1239} INFO - Starting attempt 52 of 52
+[2022-08-29 17:00:39,631] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 17:00:39,657] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): entry_task> on 2021-04-10 06:00:00+00:00
+[2022-08-29 17:00:39,668] {standard_task_runner.py:52} INFO - Started process 668 to run task
+[2022-08-29 17:00:39,676] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v3', 'entry_task', 'scheduled__2021-04-10T06:00:00+00:00', '--job-id', '1598', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpb3cl4z7p', '--error-file', '/tmp/tmp1gwdb8d3']
+[2022-08-29 17:00:39,679] {standard_task_runner.py:77} INFO - Job 1598: Subtask entry_task
+[2022-08-29 17:00:39,772] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-04-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 17:00:39,869] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v3
+AIRFLOW_CTX_TASK_ID=entry_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-10T06:00:00+00:00
+[2022-08-29 17:00:39,871] {logging_mixin.py:109} INFO - var is:  4
+[2022-08-29 17:00:39,872] {logging_mixin.py:109} INFO - quarter value is:  0
+[2022-08-29 17:00:39,874] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-29 17:00:39,889] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data_v3, task_id=entry_task, execution_date=20210410T060000, start_date=20220829T170039, end_date=20220829T170039
+[2022-08-29 17:00:39,932] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-29 17:00:39,975] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

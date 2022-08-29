@@ -1,0 +1,673 @@
+[2022-08-27 19:36:53,722] {processor.py:163} INFO - Started process (PID=620) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:53,725] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:36:53,727] {logging_mixin.py:109} INFO - [2022-08-27 19:36:53,726] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:53,735] {logging_mixin.py:109} INFO - [2022-08-27 19:36:53,733] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:36:53,757] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:53,772] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.055 seconds
+[2022-08-27 19:36:59,762] {processor.py:163} INFO - Started process (PID=633) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:59,767] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:36:59,769] {logging_mixin.py:109} INFO - [2022-08-27 19:36:59,769] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:59,779] {logging_mixin.py:109} INFO - [2022-08-27 19:36:59,778] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:36:59,820] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:36:59,847] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.090 seconds
+[2022-08-27 19:37:12,187] {processor.py:163} INFO - Started process (PID=643) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:12,190] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:37:12,191] {logging_mixin.py:109} INFO - [2022-08-27 19:37:12,191] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:12,207] {logging_mixin.py:109} INFO - [2022-08-27 19:37:12,204] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:37:12,239] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:12,257] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.074 seconds
+[2022-08-27 19:37:18,019] {processor.py:163} INFO - Started process (PID=649) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:18,021] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:37:18,023] {logging_mixin.py:109} INFO - [2022-08-27 19:37:18,023] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:18,032] {logging_mixin.py:109} INFO - [2022-08-27 19:37:18,030] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:37:18,053] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:18,062] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.050 seconds
+[2022-08-27 19:37:48,156] {processor.py:163} INFO - Started process (PID=685) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:48,158] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:37:48,160] {logging_mixin.py:109} INFO - [2022-08-27 19:37:48,160] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:48,168] {logging_mixin.py:109} INFO - [2022-08-27 19:37:48,167] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:37:48,192] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:37:48,207] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.055 seconds
+[2022-08-27 19:38:18,295] {processor.py:163} INFO - Started process (PID=712) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:18,297] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:38:18,299] {logging_mixin.py:109} INFO - [2022-08-27 19:38:18,298] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:18,306] {logging_mixin.py:109} INFO - [2022-08-27 19:38:18,305] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:38:18,326] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:18,335] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.044 seconds
+[2022-08-27 19:38:48,418] {processor.py:163} INFO - Started process (PID=740) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:48,420] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:38:48,421] {logging_mixin.py:109} INFO - [2022-08-27 19:38:48,421] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:48,430] {logging_mixin.py:109} INFO - [2022-08-27 19:38:48,429] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:38:48,451] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:38:48,465] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.051 seconds
+[2022-08-27 19:39:05,479] {processor.py:163} INFO - Started process (PID=761) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:05,482] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:39:05,484] {logging_mixin.py:109} INFO - [2022-08-27 19:39:05,483] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:05,497] {logging_mixin.py:109} INFO - [2022-08-27 19:39:05,495] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:39:05,550] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:05,582] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.108 seconds
+[2022-08-27 19:39:06,507] {processor.py:163} INFO - Started process (PID=762) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:06,509] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:39:06,510] {logging_mixin.py:109} INFO - [2022-08-27 19:39:06,510] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:06,519] {logging_mixin.py:109} INFO - [2022-08-27 19:39:06,518] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 6
+    with DAG('weatherServiceCall', start_date=datetime(2022,8,26), schedule_interval="*5 * * * *") AS dag:
+                                                                                                    ^
+SyntaxError: invalid syntax
+[2022-08-27 19:39:06,542] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:06,556] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.053 seconds
+[2022-08-27 19:39:09,519] {processor.py:163} INFO - Started process (PID=763) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:09,521] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:39:09,522] {logging_mixin.py:109} INFO - [2022-08-27 19:39:09,522] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:09,542] {logging_mixin.py:109} INFO - [2022-08-27 19:39:09,540] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:39:09,561] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:09,570] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.055 seconds
+[2022-08-27 19:39:39,696] {processor.py:163} INFO - Started process (PID=788) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:39,699] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:39:39,703] {logging_mixin.py:109} INFO - [2022-08-27 19:39:39,703] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:39,720] {logging_mixin.py:109} INFO - [2022-08-27 19:39:39,717] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:39:39,743] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:39:39,757] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.066 seconds
+[2022-08-27 19:40:09,864] {processor.py:163} INFO - Started process (PID=824) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:09,866] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:40:09,868] {logging_mixin.py:109} INFO - [2022-08-27 19:40:09,867] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:09,880] {logging_mixin.py:109} INFO - [2022-08-27 19:40:09,877] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:40:09,907] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:09,934] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.074 seconds
+[2022-08-27 19:40:34,130] {processor.py:163} INFO - Started process (PID=841) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:34,132] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:40:34,134] {logging_mixin.py:109} INFO - [2022-08-27 19:40:34,134] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:34,157] {logging_mixin.py:109} INFO - [2022-08-27 19:40:34,152] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:40:34,194] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:40:34,207] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.081 seconds
+[2022-08-27 19:41:04,285] {processor.py:163} INFO - Started process (PID=879) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:04,288] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:04,289] {logging_mixin.py:109} INFO - [2022-08-27 19:41:04,289] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:04,308] {logging_mixin.py:109} INFO - [2022-08-27 19:41:04,304] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:41:04,331] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:04,347] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.065 seconds
+[2022-08-27 19:41:06,295] {processor.py:163} INFO - Started process (PID=880) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:06,297] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:06,298] {logging_mixin.py:109} INFO - [2022-08-27 19:41:06,298] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:06,324] {logging_mixin.py:109} INFO - [2022-08-27 19:41:06,321] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:41:06,356] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:06,369] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.078 seconds
+[2022-08-27 19:41:09,390] {processor.py:163} INFO - Started process (PID=881) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:09,392] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:09,394] {logging_mixin.py:109} INFO - [2022-08-27 19:41:09,394] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:09,412] {logging_mixin.py:109} INFO - [2022-08-27 19:41:09,410] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:41:09,436] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:09,445] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.059 seconds
+[2022-08-27 19:41:22,472] {processor.py:163} INFO - Started process (PID=892) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:22,474] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:22,475] {logging_mixin.py:109} INFO - [2022-08-27 19:41:22,475] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:22,494] {logging_mixin.py:109} INFO - [2022-08-27 19:41:22,491] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:41:22,528] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:22,544] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.077 seconds
+[2022-08-27 19:41:52,754] {processor.py:163} INFO - Started process (PID=929) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:52,765] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:52,767] {logging_mixin.py:109} INFO - [2022-08-27 19:41:52,767] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:52,794] {logging_mixin.py:109} INFO - [2022-08-27 19:41:52,787] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_caller.py", line 2, in <module>
+    from airflow.operators import SimpleHttpOperator
+ImportError: cannot import name 'SimpleHttpOperator' from 'airflow.operators' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/__init__.py)
+[2022-08-27 19:41:52,828] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:52,864] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.120 seconds
+[2022-08-27 19:41:59,738] {processor.py:163} INFO - Started process (PID=935) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:59,740] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:41:59,742] {logging_mixin.py:109} INFO - [2022-08-27 19:41:59,742] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:59,770] {logging_mixin.py:109} INFO - [2022-08-27 19:41:59,769] {dagbag.py:406} ERROR - Failed to bag_dag: /opt/airflow/dags/api_caller.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 160, in _alphaconv
+    return cls.ALPHACONV[index][key]
+KeyError: '*5'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/interval.py", line 159, in validate
+    croniter(self._expression)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 154, in __init__
+    self.expanded, self.nth_weekday_of_month = self.expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 759, in expand
+    return cls._expand(expr_format, hash_id=hash_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 708, in _expand
+    t = cls._alphaconv(i, t, expressions)
+  File "/home/airflow/.local/lib/python3.7/site-packages/croniter/croniter.py", line 163, in _alphaconv
+    "[{0}] is not acceptable".format(" ".join(expressions)))
+croniter.croniter.CroniterNotAlphaError: [*5 * * * *] is not acceptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 401, in _process_modules
+    dag.timetable.validate()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/timetables/interval.py", line 161, in validate
+    raise AirflowTimetableInvalid(str(e))
+airflow.exceptions.AirflowTimetableInvalid: [*5 * * * *] is not acceptable
+[2022-08-27 19:41:59,790] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:41:59,800] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.066 seconds
+[2022-08-27 19:42:10,767] {processor.py:163} INFO - Started process (PID=945) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:10,769] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:42:10,771] {logging_mixin.py:109} INFO - [2022-08-27 19:42:10,771] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:10,821] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:16,592] {logging_mixin.py:109} INFO - [2022-08-27 19:42:16,592] {manager.py:496} INFO - Created Permission View: can edit on DAG:weatherServiceCall
+[2022-08-27 19:42:16,601] {logging_mixin.py:109} INFO - [2022-08-27 19:42:16,600] {manager.py:496} INFO - Created Permission View: can read on DAG:weatherServiceCall
+[2022-08-27 19:42:16,601] {logging_mixin.py:109} INFO - [2022-08-27 19:42:16,601] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:42:16,609] {logging_mixin.py:109} INFO - [2022-08-27 19:42:16,609] {dag.py:2415} INFO - Creating ORM DAG for weatherServiceCall
+[2022-08-27 19:42:16,619] {logging_mixin.py:109} INFO - [2022-08-27 19:42:16,619] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T00:00:00+00:00
+[2022-08-27 19:42:16,633] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 5.870 seconds
+[2022-08-27 19:42:47,288] {processor.py:163} INFO - Started process (PID=977) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:47,334] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:42:47,342] {logging_mixin.py:109} INFO - [2022-08-27 19:42:47,342] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:47,460] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:42:47,565] {logging_mixin.py:109} INFO - [2022-08-27 19:42:47,553] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:42:47,798] {logging_mixin.py:109} INFO - [2022-08-27 19:42:47,798] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T02:10:00+00:00
+[2022-08-27 19:42:47,889] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.626 seconds
+[2022-08-27 19:43:16,509] {processor.py:163} INFO - Started process (PID=1001) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:16,513] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:43:16,519] {logging_mixin.py:109} INFO - [2022-08-27 19:43:16,519] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:16,636] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:16,658] {logging_mixin.py:109} INFO - [2022-08-27 19:43:16,658] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:43:16,739] {logging_mixin.py:109} INFO - [2022-08-27 19:43:16,739] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T04:30:00+00:00
+[2022-08-27 19:43:16,775] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.279 seconds
+[2022-08-27 19:43:47,702] {processor.py:163} INFO - Started process (PID=1027) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:47,706] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:43:47,708] {logging_mixin.py:109} INFO - [2022-08-27 19:43:47,708] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:47,864] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:43:47,899] {logging_mixin.py:109} INFO - [2022-08-27 19:43:47,899] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:43:47,995] {logging_mixin.py:109} INFO - [2022-08-27 19:43:47,995] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T07:05:00+00:00
+[2022-08-27 19:43:48,019] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.325 seconds
+[2022-08-27 19:44:18,872] {processor.py:163} INFO - Started process (PID=1053) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:18,875] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:44:18,876] {logging_mixin.py:109} INFO - [2022-08-27 19:44:18,876] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:18,915] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:18,927] {logging_mixin.py:109} INFO - [2022-08-27 19:44:18,927] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:44:18,949] {logging_mixin.py:109} INFO - [2022-08-27 19:44:18,949] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T09:40:00+00:00
+[2022-08-27 19:44:18,959] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.090 seconds
+[2022-08-27 19:44:49,161] {processor.py:163} INFO - Started process (PID=1079) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:49,169] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:44:49,171] {logging_mixin.py:109} INFO - [2022-08-27 19:44:49,171] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:49,218] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:44:49,230] {logging_mixin.py:109} INFO - [2022-08-27 19:44:49,229] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:44:49,250] {logging_mixin.py:109} INFO - [2022-08-27 19:44:49,250] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T12:45:00+00:00
+[2022-08-27 19:44:49,262] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.107 seconds
+[2022-08-27 19:45:19,536] {processor.py:163} INFO - Started process (PID=1105) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:19,543] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:45:19,546] {logging_mixin.py:109} INFO - [2022-08-27 19:45:19,546] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:19,691] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:19,706] {logging_mixin.py:109} INFO - [2022-08-27 19:45:19,706] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:45:19,740] {logging_mixin.py:109} INFO - [2022-08-27 19:45:19,739] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T15:15:00+00:00
+[2022-08-27 19:45:19,794] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.265 seconds
+[2022-08-27 19:45:50,020] {processor.py:163} INFO - Started process (PID=1142) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:50,029] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:45:50,032] {logging_mixin.py:109} INFO - [2022-08-27 19:45:50,032] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:50,209] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:45:50,228] {logging_mixin.py:109} INFO - [2022-08-27 19:45:50,228] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:45:50,303] {logging_mixin.py:109} INFO - [2022-08-27 19:45:50,302] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T18:10:00+00:00
+[2022-08-27 19:45:50,333] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.324 seconds
+[2022-08-27 19:46:20,529] {processor.py:163} INFO - Started process (PID=1170) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:20,535] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:46:20,539] {logging_mixin.py:109} INFO - [2022-08-27 19:46:20,539] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:20,660] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:20,701] {logging_mixin.py:109} INFO - [2022-08-27 19:46:20,701] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:46:20,769] {logging_mixin.py:109} INFO - [2022-08-27 19:46:20,769] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T20:50:00+00:00
+[2022-08-27 19:46:20,791] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.273 seconds
+[2022-08-27 19:46:50,991] {processor.py:163} INFO - Started process (PID=1197) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:50,996] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:46:51,000] {logging_mixin.py:109} INFO - [2022-08-27 19:46:51,000] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:51,167] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:46:51,249] {logging_mixin.py:109} INFO - [2022-08-27 19:46:51,248] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:46:51,330] {logging_mixin.py:109} INFO - [2022-08-27 19:46:51,330] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-26T23:10:00+00:00
+[2022-08-27 19:46:51,356] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.377 seconds
+[2022-08-27 19:47:21,522] {processor.py:163} INFO - Started process (PID=1214) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:21,530] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:47:21,538] {logging_mixin.py:109} INFO - [2022-08-27 19:47:21,538] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:21,589] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:21,610] {logging_mixin.py:109} INFO - [2022-08-27 19:47:21,610] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:47:21,648] {logging_mixin.py:109} INFO - [2022-08-27 19:47:21,648] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T01:45:00+00:00
+[2022-08-27 19:47:21,668] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.152 seconds
+[2022-08-27 19:47:52,144] {processor.py:163} INFO - Started process (PID=1238) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:52,157] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:47:52,163] {logging_mixin.py:109} INFO - [2022-08-27 19:47:52,163] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:52,317] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:47:52,358] {logging_mixin.py:109} INFO - [2022-08-27 19:47:52,357] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:47:52,454] {logging_mixin.py:109} INFO - [2022-08-27 19:47:52,453] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T03:45:00+00:00
+[2022-08-27 19:47:52,485] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.370 seconds
+[2022-08-27 19:48:22,802] {processor.py:163} INFO - Started process (PID=1263) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:22,806] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:48:22,808] {logging_mixin.py:109} INFO - [2022-08-27 19:48:22,808] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:22,877] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:22,895] {logging_mixin.py:109} INFO - [2022-08-27 19:48:22,895] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:48:22,925] {logging_mixin.py:109} INFO - [2022-08-27 19:48:22,924] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T05:40:00+00:00
+[2022-08-27 19:48:22,940] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.143 seconds
+[2022-08-27 19:48:53,470] {processor.py:163} INFO - Started process (PID=1289) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:53,493] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:48:53,508] {logging_mixin.py:109} INFO - [2022-08-27 19:48:53,508] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:54,275] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:48:54,346] {logging_mixin.py:109} INFO - [2022-08-27 19:48:54,346] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:48:54,734] {logging_mixin.py:109} INFO - [2022-08-27 19:48:54,734] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T07:40:00+00:00
+[2022-08-27 19:48:54,938] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 1.493 seconds
+[2022-08-27 19:49:25,956] {processor.py:163} INFO - Started process (PID=1301) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:25,969] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:49:25,975] {logging_mixin.py:109} INFO - [2022-08-27 19:49:25,975] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:26,197] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:26,275] {logging_mixin.py:109} INFO - [2022-08-27 19:49:26,271] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:49:26,639] {logging_mixin.py:109} INFO - [2022-08-27 19:49:26,638] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T09:55:00+00:00
+[2022-08-27 19:49:26,796] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.855 seconds
+[2022-08-27 19:49:57,690] {processor.py:163} INFO - Started process (PID=1326) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:57,699] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:49:57,708] {logging_mixin.py:109} INFO - [2022-08-27 19:49:57,708] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:57,942] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:49:57,992] {logging_mixin.py:109} INFO - [2022-08-27 19:49:57,991] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:49:58,280] {logging_mixin.py:109} INFO - [2022-08-27 19:49:58,280] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T11:40:00+00:00
+[2022-08-27 19:49:58,327] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.658 seconds
+[2022-08-27 19:50:28,765] {processor.py:163} INFO - Started process (PID=1351) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:28,818] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:50:28,829] {logging_mixin.py:109} INFO - [2022-08-27 19:50:28,824] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:29,097] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:29,218] {logging_mixin.py:109} INFO - [2022-08-27 19:50:29,218] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:50:29,488] {logging_mixin.py:109} INFO - [2022-08-27 19:50:29,485] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T13:10:00+00:00
+[2022-08-27 19:50:29,508] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.781 seconds
+[2022-08-27 19:50:59,813] {processor.py:163} INFO - Started process (PID=1366) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:59,815] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:50:59,816] {logging_mixin.py:109} INFO - [2022-08-27 19:50:59,816] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:59,867] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:50:59,882] {logging_mixin.py:109} INFO - [2022-08-27 19:50:59,882] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:50:59,907] {logging_mixin.py:109} INFO - [2022-08-27 19:50:59,907] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T14:40:00+00:00
+[2022-08-27 19:50:59,920] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.111 seconds
+[2022-08-27 19:51:30,187] {processor.py:163} INFO - Started process (PID=1393) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:51:30,192] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:51:30,196] {logging_mixin.py:109} INFO - [2022-08-27 19:51:30,195] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:51:30,305] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:51:30,327] {logging_mixin.py:109} INFO - [2022-08-27 19:51:30,326] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:51:30,389] {logging_mixin.py:109} INFO - [2022-08-27 19:51:30,389] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T17:15:00+00:00
+[2022-08-27 19:51:30,408] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.234 seconds
+[2022-08-27 19:52:00,689] {processor.py:163} INFO - Started process (PID=1418) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:00,698] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:52:00,700] {logging_mixin.py:109} INFO - [2022-08-27 19:52:00,700] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:00,821] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:00,848] {logging_mixin.py:109} INFO - [2022-08-27 19:52:00,848] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:52:00,984] {logging_mixin.py:109} INFO - [2022-08-27 19:52:00,983] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:52:01,015] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.348 seconds
+[2022-08-27 19:52:31,774] {processor.py:163} INFO - Started process (PID=1443) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:31,776] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:52:31,777] {logging_mixin.py:109} INFO - [2022-08-27 19:52:31,777] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:31,835] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:52:31,847] {logging_mixin.py:109} INFO - [2022-08-27 19:52:31,847] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:52:31,875] {logging_mixin.py:109} INFO - [2022-08-27 19:52:31,875] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:52:31,890] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.120 seconds
+[2022-08-27 19:53:02,009] {processor.py:163} INFO - Started process (PID=1478) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:02,011] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:53:02,013] {logging_mixin.py:109} INFO - [2022-08-27 19:53:02,013] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:02,063] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:02,077] {logging_mixin.py:109} INFO - [2022-08-27 19:53:02,077] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:53:02,101] {logging_mixin.py:109} INFO - [2022-08-27 19:53:02,100] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:53:02,110] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.105 seconds
+[2022-08-27 19:53:32,210] {processor.py:163} INFO - Started process (PID=1504) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:32,213] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:53:32,215] {logging_mixin.py:109} INFO - [2022-08-27 19:53:32,215] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:32,289] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:53:32,305] {logging_mixin.py:109} INFO - [2022-08-27 19:53:32,305] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:53:32,352] {logging_mixin.py:109} INFO - [2022-08-27 19:53:32,351] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:53:32,368] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.167 seconds
+[2022-08-27 19:54:02,477] {processor.py:163} INFO - Started process (PID=1538) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:02,480] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:54:02,482] {logging_mixin.py:109} INFO - [2022-08-27 19:54:02,481] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:02,522] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:02,534] {logging_mixin.py:109} INFO - [2022-08-27 19:54:02,534] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:54:02,562] {logging_mixin.py:109} INFO - [2022-08-27 19:54:02,561] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:54:02,578] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.105 seconds
+[2022-08-27 19:54:32,665] {processor.py:163} INFO - Started process (PID=1563) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:32,669] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:54:32,670] {logging_mixin.py:109} INFO - [2022-08-27 19:54:32,670] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:32,714] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:54:32,732] {logging_mixin.py:109} INFO - [2022-08-27 19:54:32,731] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:54:32,755] {logging_mixin.py:109} INFO - [2022-08-27 19:54:32,755] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:50:00+00:00
+[2022-08-27 19:54:32,764] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.104 seconds
+[2022-08-27 19:55:02,858] {processor.py:163} INFO - Started process (PID=1590) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:02,860] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:55:02,862] {logging_mixin.py:109} INFO - [2022-08-27 19:55:02,862] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:02,918] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:02,930] {logging_mixin.py:109} INFO - [2022-08-27 19:55:02,930] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:55:03,052] {logging_mixin.py:109} INFO - [2022-08-27 19:55:03,052] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:55:03,062] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.209 seconds
+[2022-08-27 19:55:33,961] {processor.py:163} INFO - Started process (PID=1628) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:33,962] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:55:33,964] {logging_mixin.py:109} INFO - [2022-08-27 19:55:33,964] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:34,003] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:55:34,015] {logging_mixin.py:109} INFO - [2022-08-27 19:55:34,015] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:55:34,122] {logging_mixin.py:109} INFO - [2022-08-27 19:55:34,122] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:55:34,132] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.175 seconds
+[2022-08-27 19:56:04,224] {processor.py:163} INFO - Started process (PID=1655) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:04,227] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:56:04,228] {logging_mixin.py:109} INFO - [2022-08-27 19:56:04,228] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:04,263] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:04,273] {logging_mixin.py:109} INFO - [2022-08-27 19:56:04,273] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:56:04,387] {logging_mixin.py:109} INFO - [2022-08-27 19:56:04,387] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:56:04,397] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.176 seconds
+[2022-08-27 19:56:34,549] {processor.py:163} INFO - Started process (PID=1681) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:34,551] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:56:34,553] {logging_mixin.py:109} INFO - [2022-08-27 19:56:34,553] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:34,592] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:56:34,700] {logging_mixin.py:109} INFO - [2022-08-27 19:56:34,700] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:56:34,719] {logging_mixin.py:109} INFO - [2022-08-27 19:56:34,719] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:56:34,729] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.185 seconds
+[2022-08-27 19:57:04,840] {processor.py:163} INFO - Started process (PID=1716) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:04,842] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:57:04,843] {logging_mixin.py:109} INFO - [2022-08-27 19:57:04,843] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:04,883] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:05,030] {logging_mixin.py:109} INFO - [2022-08-27 19:57:05,030] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:57:05,063] {logging_mixin.py:109} INFO - [2022-08-27 19:57:05,063] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:57:05,092] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.256 seconds
+[2022-08-27 19:57:35,253] {processor.py:163} INFO - Started process (PID=1745) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:35,255] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:57:35,257] {logging_mixin.py:109} INFO - [2022-08-27 19:57:35,257] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:35,424] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:57:35,435] {logging_mixin.py:109} INFO - [2022-08-27 19:57:35,434] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:57:35,456] {logging_mixin.py:109} INFO - [2022-08-27 19:57:35,455] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:57:35,477] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.230 seconds
+[2022-08-27 19:58:05,583] {processor.py:163} INFO - Started process (PID=1770) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:05,585] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:58:05,588] {logging_mixin.py:109} INFO - [2022-08-27 19:58:05,588] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:05,741] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:05,751] {logging_mixin.py:109} INFO - [2022-08-27 19:58:05,751] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:58:05,775] {logging_mixin.py:109} INFO - [2022-08-27 19:58:05,775] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:58:05,787] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.208 seconds
+[2022-08-27 19:58:35,861] {processor.py:163} INFO - Started process (PID=1804) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:35,867] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:58:35,870] {logging_mixin.py:109} INFO - [2022-08-27 19:58:35,870] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:36,021] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:58:36,035] {logging_mixin.py:109} INFO - [2022-08-27 19:58:36,035] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:58:36,057] {logging_mixin.py:109} INFO - [2022-08-27 19:58:36,057] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:58:36,070] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.215 seconds
+[2022-08-27 19:59:06,140] {processor.py:163} INFO - Started process (PID=1830) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:06,143] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:59:06,145] {logging_mixin.py:109} INFO - [2022-08-27 19:59:06,145] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:06,284] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:06,307] {logging_mixin.py:109} INFO - [2022-08-27 19:59:06,307] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:59:06,327] {logging_mixin.py:109} INFO - [2022-08-27 19:59:06,327] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:59:06,339] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.203 seconds
+[2022-08-27 19:59:36,420] {processor.py:163} INFO - Started process (PID=1858) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:36,424] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 19:59:36,426] {logging_mixin.py:109} INFO - [2022-08-27 19:59:36,426] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:36,473] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 19:59:36,485] {logging_mixin.py:109} INFO - [2022-08-27 19:59:36,485] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 19:59:36,510] {logging_mixin.py:109} INFO - [2022-08-27 19:59:36,510] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T19:55:00+00:00
+[2022-08-27 19:59:36,525] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.111 seconds
+[2022-08-27 20:00:06,575] {processor.py:163} INFO - Started process (PID=1894) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:06,579] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:00:06,581] {logging_mixin.py:109} INFO - [2022-08-27 20:00:06,581] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:06,631] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:06,645] {logging_mixin.py:109} INFO - [2022-08-27 20:00:06,645] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:00:06,670] {logging_mixin.py:109} INFO - [2022-08-27 20:00:06,670] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:00:06,692] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.122 seconds
+[2022-08-27 20:00:36,769] {processor.py:163} INFO - Started process (PID=1919) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:36,773] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:00:36,775] {logging_mixin.py:109} INFO - [2022-08-27 20:00:36,774] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:36,825] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:00:36,858] {logging_mixin.py:109} INFO - [2022-08-27 20:00:36,858] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:00:36,909] {logging_mixin.py:109} INFO - [2022-08-27 20:00:36,909] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:00:36,933] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.171 seconds
+[2022-08-27 20:01:07,046] {processor.py:163} INFO - Started process (PID=1956) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:07,060] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:01:07,063] {logging_mixin.py:109} INFO - [2022-08-27 20:01:07,063] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:07,160] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:07,176] {logging_mixin.py:109} INFO - [2022-08-27 20:01:07,176] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:01:07,203] {logging_mixin.py:109} INFO - [2022-08-27 20:01:07,203] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:01:07,215] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.187 seconds
+[2022-08-27 20:01:37,298] {processor.py:163} INFO - Started process (PID=1983) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:37,301] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:01:37,302] {logging_mixin.py:109} INFO - [2022-08-27 20:01:37,302] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:37,350] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:01:37,366] {logging_mixin.py:109} INFO - [2022-08-27 20:01:37,365] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:01:37,389] {logging_mixin.py:109} INFO - [2022-08-27 20:01:37,389] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:01:37,403] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.109 seconds
+[2022-08-27 20:02:07,497] {processor.py:163} INFO - Started process (PID=2004) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:07,500] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:02:07,502] {logging_mixin.py:109} INFO - [2022-08-27 20:02:07,502] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:07,547] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:07,554] {logging_mixin.py:109} INFO - [2022-08-27 20:02:07,554] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:02:07,581] {logging_mixin.py:109} INFO - [2022-08-27 20:02:07,581] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:02:07,593] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.100 seconds
+[2022-08-27 20:02:37,751] {processor.py:163} INFO - Started process (PID=2035) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:37,753] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:02:37,754] {logging_mixin.py:109} INFO - [2022-08-27 20:02:37,754] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:37,791] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:02:38,009] {logging_mixin.py:109} INFO - [2022-08-27 20:02:38,009] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:02:38,029] {logging_mixin.py:109} INFO - [2022-08-27 20:02:38,029] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:02:38,041] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.295 seconds
+[2022-08-27 20:03:08,929] {processor.py:163} INFO - Started process (PID=2070) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:08,932] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:03:08,933] {logging_mixin.py:109} INFO - [2022-08-27 20:03:08,933] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:08,972] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:08,983] {logging_mixin.py:109} INFO - [2022-08-27 20:03:08,983] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:03:09,004] {logging_mixin.py:109} INFO - [2022-08-27 20:03:09,004] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:03:09,016] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.091 seconds
+[2022-08-27 20:03:39,461] {processor.py:163} INFO - Started process (PID=2096) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:39,465] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:03:39,467] {logging_mixin.py:109} INFO - [2022-08-27 20:03:39,467] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:39,615] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:03:39,652] {logging_mixin.py:109} INFO - [2022-08-27 20:03:39,652] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:03:39,706] {logging_mixin.py:109} INFO - [2022-08-27 20:03:39,706] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:03:39,743] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.312 seconds
+[2022-08-27 20:04:10,539] {processor.py:163} INFO - Started process (PID=2125) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:10,546] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:04:10,547] {logging_mixin.py:109} INFO - [2022-08-27 20:04:10,547] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:10,597] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:10,611] {logging_mixin.py:109} INFO - [2022-08-27 20:04:10,611] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:04:10,637] {logging_mixin.py:109} INFO - [2022-08-27 20:04:10,637] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:04:10,653] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.120 seconds
+[2022-08-27 20:04:40,921] {processor.py:163} INFO - Started process (PID=2154) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:40,924] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:04:40,926] {logging_mixin.py:109} INFO - [2022-08-27 20:04:40,926] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:40,982] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:04:40,997] {logging_mixin.py:109} INFO - [2022-08-27 20:04:40,997] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:04:41,024] {logging_mixin.py:109} INFO - [2022-08-27 20:04:41,024] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:00:00+00:00
+[2022-08-27 20:04:41,041] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.127 seconds
+[2022-08-27 20:05:11,241] {processor.py:163} INFO - Started process (PID=2192) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:11,245] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:05:11,247] {logging_mixin.py:109} INFO - [2022-08-27 20:05:11,247] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:11,298] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:11,317] {logging_mixin.py:109} INFO - [2022-08-27 20:05:11,316] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:05:11,349] {logging_mixin.py:109} INFO - [2022-08-27 20:05:11,348] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:05:11,360] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.124 seconds
+[2022-08-27 20:05:41,477] {processor.py:163} INFO - Started process (PID=2221) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:41,479] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:05:41,481] {logging_mixin.py:109} INFO - [2022-08-27 20:05:41,481] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:41,521] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:05:41,533] {logging_mixin.py:109} INFO - [2022-08-27 20:05:41,533] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:05:41,556] {logging_mixin.py:109} INFO - [2022-08-27 20:05:41,556] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:05:41,567] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.094 seconds
+[2022-08-27 20:06:11,695] {processor.py:163} INFO - Started process (PID=2249) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:11,697] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:06:11,698] {logging_mixin.py:109} INFO - [2022-08-27 20:06:11,698] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:11,737] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:11,748] {logging_mixin.py:109} INFO - [2022-08-27 20:06:11,748] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:06:11,772] {logging_mixin.py:109} INFO - [2022-08-27 20:06:11,772] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:06:11,785] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.094 seconds
+[2022-08-27 20:06:41,931] {processor.py:163} INFO - Started process (PID=2284) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:41,944] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:06:41,952] {logging_mixin.py:109} INFO - [2022-08-27 20:06:41,952] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:42,049] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:06:42,078] {logging_mixin.py:109} INFO - [2022-08-27 20:06:42,078] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:06:42,103] {logging_mixin.py:109} INFO - [2022-08-27 20:06:42,103] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:06:42,113] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.189 seconds
+[2022-08-27 20:07:12,285] {processor.py:163} INFO - Started process (PID=2313) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:12,287] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:07:12,289] {logging_mixin.py:109} INFO - [2022-08-27 20:07:12,289] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:12,329] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:12,343] {logging_mixin.py:109} INFO - [2022-08-27 20:07:12,343] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:07:12,367] {logging_mixin.py:109} INFO - [2022-08-27 20:07:12,367] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:07:12,379] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.098 seconds
+[2022-08-27 20:07:43,442] {processor.py:163} INFO - Started process (PID=2342) to work on /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:43,448] {processor.py:642} INFO - Processing file /opt/airflow/dags/api_caller.py for tasks to queue
+[2022-08-27 20:07:43,454] {logging_mixin.py:109} INFO - [2022-08-27 20:07:43,453] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:43,565] {processor.py:654} INFO - DAG(s) dict_keys(['weatherServiceCall']) retrieved from /opt/airflow/dags/api_caller.py
+[2022-08-27 20:07:43,595] {logging_mixin.py:109} INFO - [2022-08-27 20:07:43,594] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-27 20:07:43,682] {logging_mixin.py:109} INFO - [2022-08-27 20:07:43,682] {dag.py:2935} INFO - Setting next_dagrun for weatherServiceCall to 2022-08-27T20:05:00+00:00
+[2022-08-27 20:07:43,715] {processor.py:171} INFO - Processing /opt/airflow/dags/api_caller.py took 0.282 seconds

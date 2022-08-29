@@ -1,0 +1,27 @@
+[2022-08-29 18:49:39,494] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.entry_task2 scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:49:39,539] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.entry_task2 scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:49:39,542] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:49:39,552] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-29 18:49:39,553] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:49:39,699] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): entry_task2> on 2021-04-10 06:00:00+00:00
+[2022-08-29 18:49:39,790] {standard_task_runner.py:52} INFO - Started process 5699 to run task
+[2022-08-29 18:49:39,884] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v4', 'entry_task2', 'scheduled__2021-04-10T06:00:00+00:00', '--job-id', '1678', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpiwpluw0n', '--error-file', '/tmp/tmp51auej3m']
+[2022-08-29 18:49:39,899] {standard_task_runner.py:77} INFO - Job 1678: Subtask entry_task2
+[2022-08-29 18:49:40,490] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v4.entry_task2 scheduled__2021-04-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 18:49:40,839] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v4
+AIRFLOW_CTX_TASK_ID=entry_task2
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-10T06:00:00+00:00
+[2022-08-29 18:49:40,852] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-29 18:49:40,864] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "2"']
+[2022-08-29 18:49:41,045] {subprocess.py:85} INFO - Output:
+[2022-08-29 18:49:41,060] {subprocess.py:89} INFO - 2
+[2022-08-29 18:49:41,061] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-08-29 18:49:41,202] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data_v4, task_id=entry_task2, execution_date=20210410T060000, start_date=20220829T184939, end_date=20220829T184941
+[2022-08-29 18:49:41,553] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-29 18:49:42,175] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

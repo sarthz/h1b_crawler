@@ -1,0 +1,26 @@
+[2022-08-29 15:54:33,063] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 15:54:33,077] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 15:54:33,078] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 15:54:33,079] {taskinstance.py:1239} INFO - Starting attempt 30 of 30
+[2022-08-29 15:54:33,081] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 15:54:33,099] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): entry_task> on 2021-01-10 06:00:00+00:00
+[2022-08-29 15:54:33,109] {standard_task_runner.py:52} INFO - Started process 12427 to run task
+[2022-08-29 15:54:33,128] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v3', 'entry_task', 'scheduled__2021-01-10T06:00:00+00:00', '--job-id', '1543', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpdn0sdlmf', '--error-file', '/tmp/tmplipup0lm']
+[2022-08-29 15:54:33,131] {standard_task_runner.py:77} INFO - Job 1543: Subtask entry_task
+[2022-08-29 15:54:33,216] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v3.entry_task scheduled__2021-01-10T06:00:00+00:00 [running]> on host efb24f1b01c6
+[2022-08-29 15:54:33,285] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v3
+AIRFLOW_CTX_TASK_ID=entry_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-10T06:00:00+00:00
+[2022-08-29 15:54:33,289] {logging_mixin.py:109} INFO - var is:  {{logical_date.strftime('%-m')}}
+[2022-08-29 15:54:33,290] {logging_mixin.py:109} INFO - out of loop
+[2022-08-29 15:54:33,292] {logging_mixin.py:109} INFO - Final var value is:  {{logical_date.strftime('%-m')}}
+[2022-08-29 15:54:33,293] {logging_mixin.py:109} INFO - Final qrtr value is:  0
+[2022-08-29 15:54:33,295] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-29 15:54:33,314] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data_v3, task_id=entry_task, execution_date=20210110T060000, start_date=20220829T155433, end_date=20220829T155433
+[2022-08-29 15:54:33,374] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-29 15:54:33,415] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

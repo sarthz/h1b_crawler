@@ -1,0 +1,31 @@
+[2022-08-29 18:56:32,996] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.format_csv_to_parquet_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:56:33,046] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.format_csv_to_parquet_task scheduled__2021-01-10T06:00:00+00:00 [queued]>
+[2022-08-29 18:56:33,048] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:56:33,050] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-29 18:56:33,053] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 18:56:33,079] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_csv_to_parquet_task> on 2021-01-10 06:00:00+00:00
+[2022-08-29 18:56:33,097] {standard_task_runner.py:52} INFO - Started process 6048 to run task
+[2022-08-29 18:56:33,104] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v4', 'format_csv_to_parquet_task', 'scheduled__2021-01-10T06:00:00+00:00', '--job-id', '1695', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpr0d4gs3l', '--error-file', '/tmp/tmp2hhbmxwk']
+[2022-08-29 18:56:33,107] {standard_task_runner.py:77} INFO - Job 1695: Subtask format_csv_to_parquet_task
+[2022-08-29 18:56:33,258] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v4.format_csv_to_parquet_task scheduled__2021-01-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 18:56:33,350] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-29 18:56:33,472] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v4
+AIRFLOW_CTX_TASK_ID=format_csv_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-10T06:00:00+00:00
+[2022-08-29 18:56:33,523] {logging_mixin.py:109} INFO - Source file to be fetched for format_csv_to_parquet:  /opt/***/LCA_Disclosure_Data_FY2021_Q1.csv
+[2022-08-29 18:56:33,528] {logging_mixin.py:109} INFO - Source file: /opt/***/LCA_Disclosure_Data_FY2021_Q1.csv
+[2022-08-29 18:56:36,410] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:185: DtypeWarning: Columns (5) have mixed types.Specify dtype option on import or set low_memory=False.
+  return self.python_callable(*self.op_args, **self.op_kwargs)
+
+[2022-08-29 18:56:36,870] {logging_mixin.py:109} INFO - read from csv to df successful
+[2022-08-29 18:56:37,377] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-29 18:56:37,394] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=h1b_lca_data_v4, task_id=format_csv_to_parquet_task, execution_date=20210110T060000, start_date=20220829T185632, end_date=20220829T185637
+[2022-08-29 18:56:37,477] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-29 18:56:37,542] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

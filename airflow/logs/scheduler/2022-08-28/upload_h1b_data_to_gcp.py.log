@@ -1,0 +1,417 @@
+[2022-08-28 08:08:42,109] {processor.py:163} INFO - Started process (PID=2373) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 08:08:42,325] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 08:08:42,499] {logging_mixin.py:109} INFO - [2022-08-28 08:08:42,498] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:52:57,456] {logging_mixin.py:109} INFO - [2022-08-28 19:52:57,356] {timeout.py:36} ERROR - Process timed out, PID: 2373
+[2022-08-28 19:52:58,077] {logging_mixin.py:109} INFO - [2022-08-28 19:52:57,598] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/upload_h1b_data_to_gcp.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/upload_h1b_data_to_gcp.py", line 8, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/__init__.py", line 145, in <module>
+    from . import core
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/core/__init__.py", line 56, in <module>
+    from . import umath
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/upload_h1b_data_to_gcp.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 2373
+[2022-08-28 19:52:58,966] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:52:58,974] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:11,060] {processor.py:163} INFO - Started process (PID=2400) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:11,089] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:53:11,102] {logging_mixin.py:109} INFO - [2022-08-28 19:53:11,102] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:24,084] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:24,112] {logging_mixin.py:109} INFO - [2022-08-28 19:53:24,112] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:53:24,165] {logging_mixin.py:109} INFO - [2022-08-28 19:53:24,165] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:53:24,191] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 13.175 seconds
+[2022-08-28 19:53:54,376] {processor.py:163} INFO - Started process (PID=2428) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:54,387] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:53:54,398] {logging_mixin.py:109} INFO - [2022-08-28 19:53:54,395] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:58,862] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:53:58,916] {logging_mixin.py:109} INFO - [2022-08-28 19:53:58,915] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:53:59,049] {logging_mixin.py:109} INFO - [2022-08-28 19:53:59,049] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:53:59,121] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 4.801 seconds
+[2022-08-28 19:54:29,325] {processor.py:163} INFO - Started process (PID=2454) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:54:29,328] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:54:29,329] {logging_mixin.py:109} INFO - [2022-08-28 19:54:29,329] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:54:30,226] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:54:30,267] {logging_mixin.py:109} INFO - [2022-08-28 19:54:30,266] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:54:30,350] {logging_mixin.py:109} INFO - [2022-08-28 19:54:30,350] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:54:30,379] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.061 seconds
+[2022-08-28 19:55:00,816] {processor.py:163} INFO - Started process (PID=2480) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:00,830] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:55:00,843] {logging_mixin.py:109} INFO - [2022-08-28 19:55:00,843] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:02,881] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:02,909] {logging_mixin.py:109} INFO - [2022-08-28 19:55:02,909] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:55:02,937] {logging_mixin.py:109} INFO - [2022-08-28 19:55:02,937] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:55:02,957] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 2.175 seconds
+[2022-08-28 19:55:33,132] {processor.py:163} INFO - Started process (PID=2510) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:33,142] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:55:33,146] {logging_mixin.py:109} INFO - [2022-08-28 19:55:33,145] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:36,745] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:55:36,810] {logging_mixin.py:109} INFO - [2022-08-28 19:55:36,809] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:55:36,885] {logging_mixin.py:109} INFO - [2022-08-28 19:55:36,885] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:55:36,918] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 3.823 seconds
+[2022-08-28 19:56:07,706] {processor.py:163} INFO - Started process (PID=2535) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:07,720] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:56:07,739] {logging_mixin.py:109} INFO - [2022-08-28 19:56:07,737] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:09,530] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:09,562] {logging_mixin.py:109} INFO - [2022-08-28 19:56:09,560] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:56:09,647] {logging_mixin.py:109} INFO - [2022-08-28 19:56:09,641] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:56:09,728] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 2.130 seconds
+[2022-08-28 19:56:40,253] {processor.py:163} INFO - Started process (PID=2561) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:40,257] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:56:40,263] {logging_mixin.py:109} INFO - [2022-08-28 19:56:40,263] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:43,477] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:56:43,503] {logging_mixin.py:109} INFO - [2022-08-28 19:56:43,503] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:56:43,578] {logging_mixin.py:109} INFO - [2022-08-28 19:56:43,578] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:56:43,604] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 3.376 seconds
+[2022-08-28 19:57:14,536] {processor.py:163} INFO - Started process (PID=2592) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:14,542] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:57:14,546] {logging_mixin.py:109} INFO - [2022-08-28 19:57:14,546] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:16,464] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:16,547] {logging_mixin.py:109} INFO - [2022-08-28 19:57:16,545] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:57:16,625] {logging_mixin.py:109} INFO - [2022-08-28 19:57:16,625] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:57:16,647] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 2.144 seconds
+[2022-08-28 19:57:47,092] {processor.py:163} INFO - Started process (PID=2620) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:47,101] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:57:47,112] {logging_mixin.py:109} INFO - [2022-08-28 19:57:47,112] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:50,177] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:57:50,321] {logging_mixin.py:109} INFO - [2022-08-28 19:57:50,315] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:57:50,433] {logging_mixin.py:109} INFO - [2022-08-28 19:57:50,432] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:57:50,465] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 3.382 seconds
+[2022-08-28 19:58:20,863] {processor.py:163} INFO - Started process (PID=2649) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:20,870] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:58:20,873] {logging_mixin.py:109} INFO - [2022-08-28 19:58:20,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:22,501] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:22,542] {logging_mixin.py:109} INFO - [2022-08-28 19:58:22,540] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:58:22,604] {logging_mixin.py:109} INFO - [2022-08-28 19:58:22,604] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:58:22,633] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.775 seconds
+[2022-08-28 19:58:53,148] {processor.py:163} INFO - Started process (PID=2677) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:53,158] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:58:53,166] {logging_mixin.py:109} INFO - [2022-08-28 19:58:53,166] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:54,724] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:58:54,762] {logging_mixin.py:109} INFO - [2022-08-28 19:58:54,761] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:58:54,792] {logging_mixin.py:109} INFO - [2022-08-28 19:58:54,792] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:58:54,815] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.722 seconds
+[2022-08-28 19:59:25,760] {processor.py:163} INFO - Started process (PID=2703) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:25,763] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:59:25,764] {logging_mixin.py:109} INFO - [2022-08-28 19:59:25,764] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:26,918] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:26,972] {logging_mixin.py:109} INFO - [2022-08-28 19:59:26,971] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:59:27,009] {logging_mixin.py:109} INFO - [2022-08-28 19:59:27,009] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:59:27,045] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.289 seconds
+[2022-08-28 19:59:57,266] {processor.py:163} INFO - Started process (PID=2730) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:57,269] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 19:59:57,272] {logging_mixin.py:109} INFO - [2022-08-28 19:59:57,272] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:58,476] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 19:59:58,490] {logging_mixin.py:109} INFO - [2022-08-28 19:59:58,489] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 19:59:58,517] {logging_mixin.py:109} INFO - [2022-08-28 19:59:58,517] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 19:59:58,535] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.276 seconds
+[2022-08-28 20:00:29,495] {processor.py:163} INFO - Started process (PID=2767) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:00:29,499] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:00:29,501] {logging_mixin.py:109} INFO - [2022-08-28 20:00:29,500] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:00:30,189] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:00:30,202] {logging_mixin.py:109} INFO - [2022-08-28 20:00:30,202] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:00:30,223] {logging_mixin.py:109} INFO - [2022-08-28 20:00:30,223] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:00:30,235] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.745 seconds
+[2022-08-28 20:01:00,831] {processor.py:163} INFO - Started process (PID=2795) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:00,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:01:00,834] {logging_mixin.py:109} INFO - [2022-08-28 20:01:00,834] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:01,579] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:01,597] {logging_mixin.py:109} INFO - [2022-08-28 20:01:01,596] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:01:01,617] {logging_mixin.py:109} INFO - [2022-08-28 20:01:01,617] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:01:01,629] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.801 seconds
+[2022-08-28 20:01:32,061] {processor.py:163} INFO - Started process (PID=2821) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:32,063] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:01:32,065] {logging_mixin.py:109} INFO - [2022-08-28 20:01:32,065] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:32,724] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:01:32,735] {logging_mixin.py:109} INFO - [2022-08-28 20:01:32,735] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:01:32,753] {logging_mixin.py:109} INFO - [2022-08-28 20:01:32,753] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:01:32,766] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.709 seconds
+[2022-08-28 20:02:03,345] {processor.py:163} INFO - Started process (PID=2858) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:03,348] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:02:03,350] {logging_mixin.py:109} INFO - [2022-08-28 20:02:03,350] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:04,023] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:04,039] {logging_mixin.py:109} INFO - [2022-08-28 20:02:04,038] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:02:04,064] {logging_mixin.py:109} INFO - [2022-08-28 20:02:04,064] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:02:04,076] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.735 seconds
+[2022-08-28 20:02:34,609] {processor.py:163} INFO - Started process (PID=2884) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:34,612] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:02:34,613] {logging_mixin.py:109} INFO - [2022-08-28 20:02:34,613] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:35,318] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:02:35,329] {logging_mixin.py:109} INFO - [2022-08-28 20:02:35,328] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:02:35,356] {logging_mixin.py:109} INFO - [2022-08-28 20:02:35,356] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:02:35,368] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.763 seconds
+[2022-08-28 20:03:05,844] {processor.py:163} INFO - Started process (PID=2921) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:05,846] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:03:05,848] {logging_mixin.py:109} INFO - [2022-08-28 20:03:05,848] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:06,625] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:06,642] {logging_mixin.py:109} INFO - [2022-08-28 20:03:06,641] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:03:06,666] {logging_mixin.py:109} INFO - [2022-08-28 20:03:06,666] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:03:06,680] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.840 seconds
+[2022-08-28 20:03:37,079] {processor.py:163} INFO - Started process (PID=2949) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:37,081] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:03:37,082] {logging_mixin.py:109} INFO - [2022-08-28 20:03:37,082] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:37,701] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:03:37,713] {logging_mixin.py:109} INFO - [2022-08-28 20:03:37,712] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:03:37,732] {logging_mixin.py:109} INFO - [2022-08-28 20:03:37,732] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:03:37,744] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.671 seconds
+[2022-08-28 20:04:08,191] {processor.py:163} INFO - Started process (PID=2975) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:08,193] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:04:08,196] {logging_mixin.py:109} INFO - [2022-08-28 20:04:08,196] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:08,847] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:08,864] {logging_mixin.py:109} INFO - [2022-08-28 20:04:08,864] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:04:08,881] {logging_mixin.py:109} INFO - [2022-08-28 20:04:08,881] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:04:08,894] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.707 seconds
+[2022-08-28 20:04:39,627] {processor.py:163} INFO - Started process (PID=3012) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:39,631] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:04:39,634] {logging_mixin.py:109} INFO - [2022-08-28 20:04:39,633] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:41,004] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:04:41,049] {logging_mixin.py:109} INFO - [2022-08-28 20:04:41,044] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:04:41,076] {logging_mixin.py:109} INFO - [2022-08-28 20:04:41,076] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:04:41,093] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.471 seconds
+[2022-08-28 20:05:11,901] {processor.py:163} INFO - Started process (PID=3038) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:11,903] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:05:11,904] {logging_mixin.py:109} INFO - [2022-08-28 20:05:11,904] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:12,561] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:12,575] {logging_mixin.py:109} INFO - [2022-08-28 20:05:12,575] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:05:12,601] {logging_mixin.py:109} INFO - [2022-08-28 20:05:12,601] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:05:12,612] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.715 seconds
+[2022-08-28 20:05:43,183] {processor.py:163} INFO - Started process (PID=3073) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:43,186] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:05:43,188] {logging_mixin.py:109} INFO - [2022-08-28 20:05:43,188] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:43,890] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:05:43,902] {logging_mixin.py:109} INFO - [2022-08-28 20:05:43,901] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:05:43,919] {logging_mixin.py:109} INFO - [2022-08-28 20:05:43,919] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:05:43,931] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.752 seconds
+[2022-08-28 20:06:14,480] {processor.py:163} INFO - Started process (PID=3102) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:14,485] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:06:14,488] {logging_mixin.py:109} INFO - [2022-08-28 20:06:14,488] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:15,286] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:15,303] {logging_mixin.py:109} INFO - [2022-08-28 20:06:15,303] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:06:15,329] {logging_mixin.py:109} INFO - [2022-08-28 20:06:15,328] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:06:15,345] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.875 seconds
+[2022-08-28 20:06:45,521] {processor.py:163} INFO - Started process (PID=3128) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:45,523] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:06:45,525] {logging_mixin.py:109} INFO - [2022-08-28 20:06:45,525] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:46,142] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:06:46,154] {logging_mixin.py:109} INFO - [2022-08-28 20:06:46,154] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:06:46,174] {logging_mixin.py:109} INFO - [2022-08-28 20:06:46,174] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:06:46,188] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.671 seconds
+[2022-08-28 20:07:16,901] {processor.py:163} INFO - Started process (PID=3167) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:16,903] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:07:16,905] {logging_mixin.py:109} INFO - [2022-08-28 20:07:16,905] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:17,651] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:17,673] {logging_mixin.py:109} INFO - [2022-08-28 20:07:17,672] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:07:17,729] {logging_mixin.py:109} INFO - [2022-08-28 20:07:17,721] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:07:17,762] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.867 seconds
+[2022-08-28 20:07:48,104] {processor.py:163} INFO - Started process (PID=3193) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:48,106] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:07:48,108] {logging_mixin.py:109} INFO - [2022-08-28 20:07:48,108] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:48,874] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:07:48,892] {logging_mixin.py:109} INFO - [2022-08-28 20:07:48,891] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:07:48,929] {logging_mixin.py:109} INFO - [2022-08-28 20:07:48,929] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:07:48,951] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.852 seconds
+[2022-08-28 20:08:19,395] {processor.py:163} INFO - Started process (PID=3233) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:19,398] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:08:19,400] {logging_mixin.py:109} INFO - [2022-08-28 20:08:19,400] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:20,379] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:20,419] {logging_mixin.py:109} INFO - [2022-08-28 20:08:20,418] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:08:20,484] {logging_mixin.py:109} INFO - [2022-08-28 20:08:20,483] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:08:20,513] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.125 seconds
+[2022-08-28 20:08:50,751] {processor.py:163} INFO - Started process (PID=3260) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:50,754] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:08:50,757] {logging_mixin.py:109} INFO - [2022-08-28 20:08:50,757] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:51,612] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:08:51,630] {logging_mixin.py:109} INFO - [2022-08-28 20:08:51,630] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:08:51,663] {logging_mixin.py:109} INFO - [2022-08-28 20:08:51,663] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:08:51,680] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.935 seconds
+[2022-08-28 20:09:22,028] {processor.py:163} INFO - Started process (PID=3288) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:22,030] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:09:22,032] {logging_mixin.py:109} INFO - [2022-08-28 20:09:22,032] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:22,746] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:22,766] {logging_mixin.py:109} INFO - [2022-08-28 20:09:22,765] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:09:22,792] {logging_mixin.py:109} INFO - [2022-08-28 20:09:22,792] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:09:22,805] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.782 seconds
+[2022-08-28 20:09:53,417] {processor.py:163} INFO - Started process (PID=3313) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:53,431] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:09:53,448] {logging_mixin.py:109} INFO - [2022-08-28 20:09:53,447] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:55,074] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:09:55,092] {logging_mixin.py:109} INFO - [2022-08-28 20:09:55,092] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:09:55,123] {logging_mixin.py:109} INFO - [2022-08-28 20:09:55,123] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:09:55,140] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 1.768 seconds
+[2022-08-28 20:10:25,624] {processor.py:163} INFO - Started process (PID=3350) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:25,627] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:10:25,630] {logging_mixin.py:109} INFO - [2022-08-28 20:10:25,630] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:26,483] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:26,501] {logging_mixin.py:109} INFO - [2022-08-28 20:10:26,500] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:10:26,525] {logging_mixin.py:109} INFO - [2022-08-28 20:10:26,525] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:10:26,542] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.938 seconds
+[2022-08-28 20:10:56,883] {processor.py:163} INFO - Started process (PID=3377) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:56,886] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:10:56,888] {logging_mixin.py:109} INFO - [2022-08-28 20:10:56,888] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:57,573] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:10:57,584] {logging_mixin.py:109} INFO - [2022-08-28 20:10:57,584] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:10:57,607] {logging_mixin.py:109} INFO - [2022-08-28 20:10:57,607] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:10:57,619] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.740 seconds
+[2022-08-28 20:11:28,096] {processor.py:163} INFO - Started process (PID=3415) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:11:28,099] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:11:28,101] {logging_mixin.py:109} INFO - [2022-08-28 20:11:28,101] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:11:28,898] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:11:28,925] {logging_mixin.py:109} INFO - [2022-08-28 20:11:28,925] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:11:28,950] {logging_mixin.py:109} INFO - [2022-08-28 20:11:28,950] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:11:28,964] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.873 seconds
+[2022-08-28 20:11:59,391] {processor.py:163} INFO - Started process (PID=3444) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:11:59,393] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:11:59,395] {logging_mixin.py:109} INFO - [2022-08-28 20:11:59,395] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:12:00,077] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:12:00,091] {logging_mixin.py:109} INFO - [2022-08-28 20:12:00,090] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:12:00,114] {logging_mixin.py:109} INFO - [2022-08-28 20:12:00,114] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:12:00,126] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.741 seconds
+[2022-08-28 20:12:30,624] {processor.py:163} INFO - Started process (PID=3470) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:12:30,626] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:12:30,628] {logging_mixin.py:109} INFO - [2022-08-28 20:12:30,627] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:12:31,239] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:12:31,256] {logging_mixin.py:109} INFO - [2022-08-28 20:12:31,255] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:12:31,274] {logging_mixin.py:109} INFO - [2022-08-28 20:12:31,274] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:12:31,302] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.683 seconds
+[2022-08-28 20:13:01,860] {processor.py:163} INFO - Started process (PID=3506) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:01,862] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:13:01,865] {logging_mixin.py:109} INFO - [2022-08-28 20:13:01,865] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:02,510] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:02,522] {logging_mixin.py:109} INFO - [2022-08-28 20:13:02,522] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:13:02,542] {logging_mixin.py:109} INFO - [2022-08-28 20:13:02,542] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:13:02,556] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.701 seconds
+[2022-08-28 20:13:33,218] {processor.py:163} INFO - Started process (PID=3532) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:33,222] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:13:33,224] {logging_mixin.py:109} INFO - [2022-08-28 20:13:33,224] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:34,082] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:13:34,099] {logging_mixin.py:109} INFO - [2022-08-28 20:13:34,098] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:13:34,125] {logging_mixin.py:109} INFO - [2022-08-28 20:13:34,125] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:13:34,142] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.931 seconds
+[2022-08-28 20:14:04,667] {processor.py:163} INFO - Started process (PID=3558) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:04,673] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:14:04,676] {logging_mixin.py:109} INFO - [2022-08-28 20:14:04,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:08,155] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:08,348] {logging_mixin.py:109} INFO - [2022-08-28 20:14:08,347] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:14:08,787] {logging_mixin.py:109} INFO - [2022-08-28 20:14:08,787] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:14:09,167] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 4.561 seconds
+[2022-08-28 20:14:39,762] {processor.py:163} INFO - Started process (PID=3586) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:39,765] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:14:39,768] {logging_mixin.py:109} INFO - [2022-08-28 20:14:39,768] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:40,653] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:14:40,665] {logging_mixin.py:109} INFO - [2022-08-28 20:14:40,664] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:14:40,684] {logging_mixin.py:109} INFO - [2022-08-28 20:14:40,684] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:14:40,695] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.938 seconds
+[2022-08-28 20:15:11,040] {processor.py:163} INFO - Started process (PID=3621) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:11,042] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:15:11,043] {logging_mixin.py:109} INFO - [2022-08-28 20:15:11,043] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:11,716] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:11,729] {logging_mixin.py:109} INFO - [2022-08-28 20:15:11,728] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:15:11,750] {logging_mixin.py:109} INFO - [2022-08-28 20:15:11,750] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:15:11,767] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.732 seconds
+[2022-08-28 20:15:42,234] {processor.py:163} INFO - Started process (PID=3646) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:42,239] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:15:42,243] {logging_mixin.py:109} INFO - [2022-08-28 20:15:42,243] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:42,920] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:15:42,934] {logging_mixin.py:109} INFO - [2022-08-28 20:15:42,933] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:15:42,953] {logging_mixin.py:109} INFO - [2022-08-28 20:15:42,952] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:15:42,966] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.738 seconds
+[2022-08-28 20:16:13,560] {processor.py:163} INFO - Started process (PID=3672) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:13,563] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:16:13,565] {logging_mixin.py:109} INFO - [2022-08-28 20:16:13,565] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:14,363] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:14,382] {logging_mixin.py:109} INFO - [2022-08-28 20:16:14,382] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:16:14,409] {logging_mixin.py:109} INFO - [2022-08-28 20:16:14,409] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:16:14,428] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.880 seconds
+[2022-08-28 20:16:44,784] {processor.py:163} INFO - Started process (PID=3711) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:44,787] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:16:44,788] {logging_mixin.py:109} INFO - [2022-08-28 20:16:44,788] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:45,476] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:16:45,488] {logging_mixin.py:109} INFO - [2022-08-28 20:16:45,488] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:16:45,507] {logging_mixin.py:109} INFO - [2022-08-28 20:16:45,507] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:16:45,518] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.738 seconds
+[2022-08-28 20:17:15,894] {processor.py:163} INFO - Started process (PID=3738) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:15,896] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:17:15,898] {logging_mixin.py:109} INFO - [2022-08-28 20:17:15,898] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:16,506] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:16,517] {logging_mixin.py:109} INFO - [2022-08-28 20:17:16,517] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:17:16,535] {logging_mixin.py:109} INFO - [2022-08-28 20:17:16,535] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:17:16,545] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.656 seconds
+[2022-08-28 20:17:47,213] {processor.py:163} INFO - Started process (PID=3774) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:47,216] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:17:47,219] {logging_mixin.py:109} INFO - [2022-08-28 20:17:47,219] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:48,018] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:17:48,039] {logging_mixin.py:109} INFO - [2022-08-28 20:17:48,038] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:17:48,072] {logging_mixin.py:109} INFO - [2022-08-28 20:17:48,072] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:17:48,092] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.884 seconds
+[2022-08-28 20:18:18,457] {processor.py:163} INFO - Started process (PID=3801) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:18,459] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:18:18,461] {logging_mixin.py:109} INFO - [2022-08-28 20:18:18,461] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:19,144] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:19,160] {logging_mixin.py:109} INFO - [2022-08-28 20:18:19,159] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:18:19,188] {logging_mixin.py:109} INFO - [2022-08-28 20:18:19,188] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:18:19,204] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.751 seconds
+[2022-08-28 20:18:49,615] {processor.py:163} INFO - Started process (PID=3827) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:49,618] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:18:49,619] {logging_mixin.py:109} INFO - [2022-08-28 20:18:49,619] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:50,217] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:18:50,230] {logging_mixin.py:109} INFO - [2022-08-28 20:18:50,229] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:18:50,249] {logging_mixin.py:109} INFO - [2022-08-28 20:18:50,249] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:18:50,261] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.650 seconds
+[2022-08-28 20:19:20,778] {processor.py:163} INFO - Started process (PID=3862) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:20,781] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:19:20,783] {logging_mixin.py:109} INFO - [2022-08-28 20:19:20,782] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:21,654] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:21,671] {logging_mixin.py:109} INFO - [2022-08-28 20:19:21,671] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:19:21,704] {logging_mixin.py:109} INFO - [2022-08-28 20:19:21,704] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:19:21,725] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.952 seconds
+[2022-08-28 20:19:52,045] {processor.py:163} INFO - Started process (PID=3891) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:52,051] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:19:52,054] {logging_mixin.py:109} INFO - [2022-08-28 20:19:52,053] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:52,817] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:19:52,862] {logging_mixin.py:109} INFO - [2022-08-28 20:19:52,861] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:19:52,900] {logging_mixin.py:109} INFO - [2022-08-28 20:19:52,900] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:19:52,923] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.889 seconds
+[2022-08-28 20:20:23,575] {processor.py:163} INFO - Started process (PID=3924) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:23,639] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:20:23,662] {logging_mixin.py:109} INFO - [2022-08-28 20:20:23,662] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:27,793] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:27,828] {logging_mixin.py:109} INFO - [2022-08-28 20:20:27,827] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:20:27,864] {logging_mixin.py:109} INFO - [2022-08-28 20:20:27,863] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:20:27,884] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 4.315 seconds
+[2022-08-28 20:20:58,832] {processor.py:163} INFO - Started process (PID=3956) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:58,834] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:20:58,836] {logging_mixin.py:109} INFO - [2022-08-28 20:20:58,835] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:59,455] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:20:59,468] {logging_mixin.py:109} INFO - [2022-08-28 20:20:59,468] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:20:59,489] {logging_mixin.py:109} INFO - [2022-08-28 20:20:59,489] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:20:59,509] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 0.682 seconds
+[2022-08-28 20:41:21,260] {processor.py:163} INFO - Started process (PID=3985) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:41:21,288] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:41:21,292] {logging_mixin.py:109} INFO - [2022-08-28 20:41:21,291] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:41:27,926] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:41:27,978] {logging_mixin.py:109} INFO - [2022-08-28 20:41:27,977] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:41:28,034] {logging_mixin.py:109} INFO - [2022-08-28 20:41:28,034] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:41:28,074] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 6.861 seconds
+[2022-08-28 20:41:58,846] {processor.py:163} INFO - Started process (PID=4008) to work on /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:41:58,887] {processor.py:642} INFO - Processing file /opt/airflow/dags/upload_h1b_data_to_gcp.py for tasks to queue
+[2022-08-28 20:41:58,935] {logging_mixin.py:109} INFO - [2022-08-28 20:41:58,922] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:42:10,201] {processor.py:654} INFO - DAG(s) dict_keys(['h1b_lca_data']) retrieved from /opt/airflow/dags/upload_h1b_data_to_gcp.py
+[2022-08-28 20:42:10,235] {logging_mixin.py:109} INFO - [2022-08-28 20:42:10,234] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-08-28 20:42:10,260] {logging_mixin.py:109} INFO - [2022-08-28 20:42:10,260] {dag.py:2935} INFO - Setting next_dagrun for h1b_lca_data to 2022-07-10T06:00:00+00:00
+[2022-08-28 20:42:10,287] {processor.py:171} INFO - Processing /opt/airflow/dags/upload_h1b_data_to_gcp.py took 11.492 seconds

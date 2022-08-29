@@ -1,0 +1,33 @@
+[2022-08-29 19:04:43,473] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.download_data_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 19:04:43,502] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: h1b_lca_data_v4.download_data_task scheduled__2021-04-10T06:00:00+00:00 [queued]>
+[2022-08-29 19:04:43,505] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 19:04:43,507] {taskinstance.py:1239} INFO - Starting attempt 3 of 3
+[2022-08-29 19:04:43,508] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-29 19:04:43,527] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_data_task> on 2021-04-10 06:00:00+00:00
+[2022-08-29 19:04:43,543] {standard_task_runner.py:52} INFO - Started process 6409 to run task
+[2022-08-29 19:04:43,550] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'h1b_lca_data_v4', 'download_data_task', 'scheduled__2021-04-10T06:00:00+00:00', '--job-id', '1702', '--raw', '--subdir', 'DAGS_FOLDER/upload_h1b_data_to_gcp.py', '--cfg-path', '/tmp/tmpf1jd0ayr', '--error-file', '/tmp/tmpb1s9x7uy']
+[2022-08-29 19:04:43,553] {standard_task_runner.py:77} INFO - Job 1702: Subtask download_data_task
+[2022-08-29 19:04:43,659] {logging_mixin.py:109} INFO - Running <TaskInstance: h1b_lca_data_v4.download_data_task scheduled__2021-04-10T06:00:00+00:00 [running]> on host f153c6531160
+[2022-08-29 19:04:43,740] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-08-29 19:04:43,797] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=h1b_lca_data_v4
+AIRFLOW_CTX_TASK_ID=download_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-10T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-04-10T06:00:00+00:00
+[2022-08-29 19:04:43,800] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-29 19:04:43,802] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2021_Q2.xlsx>/opt/***/LCA_Disclosure_Data_FY2021_Q2.xlsx']
+[2022-08-29 19:04:43,821] {subprocess.py:85} INFO - Output:
+[2022-08-29 19:04:53,773] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-08-29 19:04:53,793] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 6409. PIDs of all processes in the group: [6410, 6411, 6409]
+[2022-08-29 19:04:53,800] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 6409
+[2022-08-29 19:04:53,805] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-08-29 19:04:53,806] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-08-29 19:04:54,033] {process_utils.py:70} INFO - Process psutil.Process(pid=6409, status='terminated', exitcode=0, started='19:04:43') (6409) terminated with exit code 0
+[2022-08-29 19:04:54,048] {process_utils.py:70} INFO - Process psutil.Process(pid=6410, status='terminated', started='19:04:43') (6410) terminated with exit code None
+[2022-08-29 19:04:54,064] {process_utils.py:70} INFO - Process psutil.Process(pid=6411, status='terminated', started='19:04:43') (6411) terminated with exit code None
