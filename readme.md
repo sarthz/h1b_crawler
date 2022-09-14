@@ -1,7 +1,7 @@
 
 The H1B dataset exists in GCS and BQ on GCP analyzed via BQ and DataStudio
 
-Dashboard: https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/
+[Dashboard | https://datastudio.google.com/reporting/1eaef0e9-eb5b-4818-94e4-d79dbc384ac9]
 
 
 Summary points:
