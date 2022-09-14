@@ -16,7 +16,7 @@ Employers:
 - Google, Amazon, and Microsoft were the top 3 employers in terms of total number of H1B certifications. Cognizant ranked 5th in contrast to being the top H1B petiton filer last year.
 
 Job Titles:
-- "Computer and Information System Manager" was the job title commanding an annual base salary of $174k (median) in the management band
+- "Computer and Information System Manager" was the top job title commanding an annual base salary of $174k (median) in the management band
 - "Computer and Information Research Scientists" ranked first in non-managment band with an annual base salary of 140k (median)
 
 Geography:
