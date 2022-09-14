@@ -5,7 +5,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
-
+from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 from datetime import datetime
 
 
@@ -20,6 +20,8 @@ execution_month = ''+str('{{logical_date.strftime(\'%-m\')}}')
 quarter = 0
 
 #URL format: https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2022_Q3.xlsx
+#Performance data url: https://www.dol.gov/agencies/eta/foreign-labor/performance
+
 URL_PREFIX = 'https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY'
 # URL_TEMPLATE = URL_PREFIX + str('{{ execution_date.strftime(\'%Y\') }}') + '_Q' + str('{{ execution_date.strftime(\'%-m\') }}') +'.xlsx'
 # URL_TEMPLATE = URL_PREFIX + str('{{ execution_date.strftime(\'%Y\') }}') + '_Q' + str(quarter) +'.xlsx'
@@ -32,6 +34,7 @@ OUTPUT_FILE = dataset_file.replace(".xlsx", ".parquet")
 parquet_file = dataset_file.replace('.csv', '.parquet')
 # gcs_parquet_file = 'LCA_Disclosure_Data_FY' + str('{{ execution_date.strftime(\'%Y\') }}') + '_Q' + str('{{ execution_date.strftime(\'%-m\') }}') +'.parquet'
 gcs_parquet_file = 'LCA_Disclosure_Data_FY' + str('{{ execution_date.strftime(\'%Y\') }}') + '_Q'
+sql_path = '/opt/airflow/sql'
 
 def format_xlsx_to_csv(src_file):
     import pandas as pd
@@ -95,14 +98,24 @@ def test(ex_year, ex_month, **kwargs):
     kwargs['ti'].xcom_push(key='ex_month', value=quarter)
     kwargs['ti'].xcom_push(key='ex_year', value=year)
 
+def read_sql(path):
+    with open(path, "r") as file:
+        sql_string = file.read()
+    return sql_string
+
 # DAG START
 
+bq_dataset = f"{BIGQUERY_DATASET}"
+
 h1b_lca_data_workflow = DAG(
-    "h1b_lca_data_v4",
+    "h1b_lca_data_v5",
     schedule_interval="0 6 10 */3 *",
     start_date=datetime(2021,1,1),
-    end_date=datetime(2022,9,30),
-    render_template_as_native_obj=True
+    end_date=datetime(2022,12,31),
+    render_template_as_native_obj=True,
+    # template_searchpath='/opt/airflow/dags'
+    # template_searchpath="/h1b_lca_data/raw/"
+    user_defined_macros={"BIGQUERY_DATASET": bq_dataset}
 )
 
 with h1b_lca_data_workflow:
@@ -173,16 +186,82 @@ with h1b_lca_data_workflow:
                 "projectId": PROJECT_ID,
                 "datasetId": BIGQUERY_DATASET,
                 # "tableId": "external_table",
-                "tableId": f"external_"+ '{{ ti.xcom_pull(key="ex_year") }}' + '_Q' + '{{ ti.xcom_pull(key="ex_month") }}'
+                # "tableId": f"external_"+ '{{ ti.xcom_pull(key="ex_year") }}' + '_Q' + '{{ ti.xcom_pull(key="ex_month") }}'
+                "tableId": f"external_h1b_data"
             },
             "externalDataConfiguration": {
                 "autodetect": True,
                 "sourceFormat": "PARQUET",
-                "sourceUris": [f"gs://{BUCKET}/raw/{gcs_parquet_file}"+ '{{ ti.xcom_pull(key="ex_month") }}.parquet'],
+                # "sourceUris": [f"gs://{BUCKET}/raw/{gcs_parquet_file}"+ '{{ ti.xcom_pull(key="ex_month") }}.parquet'],
+                "sourceUris": [f"gs://{BUCKET}/raw/*"],
             },
         },
     )
 
-entry_task >> entry_task2 >> download_data_task >> format_xlsx_to_csv_task >> format_csv_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task
+    insert_query_job_h1b_data_task = BigQueryInsertJobOperator(
+        task_id=f"insert_query_job_h1b_data",
+        configuration={
+            "query": {
+                # "query": read_sql(f"{sql_path}h1b_transformation.sql"),
+                # "query": "{% include h1b_transformation.sql %}",
+                "query": "{% include 'h1b_transformation.sql' %}",
+                
+                "useLegacySql": False,
+            }
+        },
+    )
+
+    update_table_h1b_data_landscape_task = BigQueryInsertJobOperator(
+        task_id=f"update_table_h1b_data_landscape",
+        configuration={
+            "query": {
+                # "query": read_sql(f"{sql_path}h1b_transformation.sql"),
+                # "query": "{% include h1b_transformation.sql %}",
+                "query": "{% include 'landscape_v1.sql' %}",
+                
+                "useLegacySql": False,
+            }
+        },
+    )
+
+    update_table_h1b_data_top_companies_task = BigQueryInsertJobOperator(
+        task_id=f"update_table_h1b_data_top_companies",
+        configuration={
+            "query": {
+                # "query": read_sql(f"{sql_path}h1b_transformation.sql"),
+                # "query": "{% include h1b_transformation.sql %}",
+                "query": "{% include 'top_companies_v1.sql' %}",
+                
+                "useLegacySql": False,
+            }
+        },
+    )
+    update_table_h1b_data_top_job_titles_task = BigQueryInsertJobOperator(
+        task_id=f"update_table_h1b_data_top_job_titles",
+        configuration={
+            "query": {
+                # "query": read_sql(f"{sql_path}h1b_transformation.sql"),
+                # "query": "{% include h1b_transformation.sql %}",
+                "query": "{% include 'top_job_titles_v1.sql' %}",
+                
+                "useLegacySql": False,
+            }
+        },
+    )
+    update_table_h1b_data_top_cities_states_task = BigQueryInsertJobOperator(
+        task_id=f"update_table_h1b_data_top_cities_states",
+        configuration={
+            "query": {
+                # "query": read_sql(f"{sql_path}h1b_transformation.sql"),
+                # "query": "{% include h1b_transformation.sql %}",
+                "query": "{% include 'top_cities_states_v1.sql' %}",
+                
+                "useLegacySql": False,
+            }
+        },
+    )
+
+
+entry_task >> entry_task2 >> download_data_task >> format_xlsx_to_csv_task >> format_csv_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task >> insert_query_job_h1b_data_task >> [update_table_h1b_data_landscape_task,update_table_h1b_data_top_companies_task,update_table_h1b_data_top_job_titles_task,update_table_h1b_data_top_cities_states_task]
 
 # DAG END
