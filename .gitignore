@@ -1,1 +1,22 @@
 # add files to ignore here
+airflow/dags/api_caller.py
+airflow/dags/nyt_caller.py
+airflow/dags/trial_excel_read.py
+airflow/dags/trial_excel_read.py
+airflow/logs/NYTPopularArticles/
+airflow/logs/h1b_lca_data_v4/bigquery_external_table_task/2021-04-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v4/bigquery_external_table_task/2021-07-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v4/download_data_task/2021-07-10T06:00:00+00:00/5.log
+airflow/logs/h1b_lca_data_v4/entry_task/2021-07-10T06:00:00+00:00/3.log
+airflow/logs/h1b_lca_data_v4/entry_task2/2021-07-10T06:00:00+00:00/3.log
+airflow/logs/h1b_lca_data_v4/format_csv_to_parquet_task/2021-04-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v4/format_csv_to_parquet_task/2021-07-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v4/format_xlsx_to_csv_task/2021-07-10T06:00:00+00:00/2.log
+airflow/logs/h1b_lca_data_v4/local_to_gcs_task/2021-04-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v4/local_to_gcs_task/2021-07-10T06:00:00+00:00/
+airflow/logs/h1b_lca_data_v5/
+airflow/logs/weatherServiceCall/
+data/
+sql/
+
+

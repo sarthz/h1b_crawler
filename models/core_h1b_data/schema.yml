@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: h1b_data
+    description: >
+      Table version of the staged h1b crawl data

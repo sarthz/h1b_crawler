@@ -1,0 +1,211 @@
+version: 2
+
+sources:
+  - name: staging
+    database: wise-logic-354820
+    schema: h1b_data
+
+    tables:
+      - name: h1b_data_raw
+
+models:
+  - name: stg_h1b_data
+    description: >
+      Data for all H1B cases provided on https://www.dol.gov/agencies/eta/foreign-labor/performance
+    columns:
+      - name: CASE_NUMBER
+        description: TBD
+        tests:
+                - not_null:
+                    severity: warn
+      - name: CASE_STATUS  
+        description: TBD
+      - name: RECEIVED_DATE 
+        description: TBD
+      - name: DECISION_DATE
+        description: TBD
+      - name: ORIGINAL_CERT_DATE
+        description: TBD
+      - name: VISA_CLASS 
+        description: TBD
+      - name: JOB_TITLE
+        description: TBD
+      - name: SOC_CODE 
+        description: TBD
+        tests:
+                - not_null:
+                    severity: warn
+      - name: SOC_TITLE  
+        description: TBD
+      - name: FULL_TIME_POSITION 
+        description: TBD
+      - name: BEGIN_DATE 
+        description: TBD
+      - name: END_DATE 
+        description: TBD
+      - name: TOTAL_WORKER_POSITIONS 
+        description: TBD
+      - name: NEW_EMPLOYMENT
+        description: TBD
+      - name: CONTINUED_EMPLOYMENT 
+        description: TBD
+      - name: CHANGE_PREVIOUS_EMPLOYMENT 
+        description: TBD
+      - name: NEW_CONCURRENT_EMPLOYMENT 
+        description: TBD
+      - name: CHANGE_EMPLOYER 
+        description: TBD
+      - name: AMENDED_PETITION
+        description: TBD
+      - name: EMPLOYER_NAME  
+        description: TBD
+      - name: TRADE_NAME_DBA 
+        description: TBD
+      - name: EMPLOYER_ADDRESS1  
+        description: TBD
+      - name: EMPLOYER_ADDRESS2  
+        description: TBD
+      - name: EMPLOYER_CITY  
+        description: TBD
+      - name: EMPLOYER_STATE 
+        description: TBD
+      - name: EMPLOYER_POSTAL_CODE 
+        description: TBD
+      - name: EMPLOYER_COUNTRY 
+        description: TBD
+      - name: EMPLOYER_PROVINCE
+        description: TBD
+      - name: EMPLOYER_PHONE 
+        description: TBD
+      - name: EMPLOYER_PHONE_EXT 
+        description: TBD
+      - name: NAICS_CODE 
+        description: TBD
+      - name: EMPLOYER_POC_LAST_NAME 
+        description: TBD
+      - name: EMPLOYER_POC_FIRST_NAME  
+        description: TBD
+      - name: EMPLOYER_POC_MIDDLE_NAME 
+        description: TBD
+      - name: EMPLOYER_POC_JOB_TITLE 
+        description: TBD
+      - name: EMPLOYER_POC_ADDRESS_1 
+        description: TBD
+      - name: EMPLOYER_POC_ADDRESS_2 
+        description: TBD
+      - name: EMPLOYER_POC_CITY  
+        description: TBD
+      - name: EMPLOYER_POC_STATE 
+        description: TBD
+      - name: EMPLOYER_POC_POSTAL_CODE 
+        description: TBD
+      - name: EMPLOYER_POC_COUNTRY 
+        description: TBD
+      - name: EMPLOYER_POC_PROVINCE  
+        description: TBD
+      - name: EMPLOYER_POC_PHONE 
+        description: TBD
+      - name: EMPLOYER_POC_PHONE_EXT 
+        description: TBD
+      - name: EMPLOYER_POC_EMAIL 
+        description: TBD
+      - name: AGENT_REPRESENTING_EMPLOYER
+        description: TBD
+      - name: AGENT_ATTORNEY_LAST_NAME 
+        description: TBD
+      - name: AGENT_ATTORNEY_FIRST_NAME  
+        description: TBD
+      - name: AGENT_ATTORNEY_MIDDLE_NAME 
+        description: TBD
+      - name: AGENT_ATTORNEY_ADDRESS1  
+        description: TBD
+      - name: AGENT_ATTORNEY_ADDRESS2  
+        description: TBD
+      - name: AGENT_ATTORNEY_CITY  
+        description: TBD
+      - name: AGENT_ATTORNEY_STATE 
+        description: TBD
+      - name: AGENT_ATTORNEY_POSTAL_CODE 
+        description: TBD
+      - name: AGENT_ATTORNEY_COUNTRY 
+        description: TBD
+      - name: AGENT_ATTORNEY_PROVINCE  
+        description: TBD
+      - name: AGENT_ATTORNEY_PHONE 
+        description: TBD
+      - name: AGENT_ATTORNEY_PHONE_EXT 
+        description: TBD
+      - name: AGENT_ATTORNEY_EMAIL_ADDRESS 
+        description: TBD
+      - name: LAWFIRM_NAME_BUSINESS_NAME 
+        description: TBD
+      - name: STATE_OF_HIGHEST_COURT 
+        description: TBD
+      - name: NAME_OF_HIGHEST_STATE_COURT  
+        description: TBD
+      - name: SECONDARY_ENTITY
+        description: TBD
+      - name: SECONDARY_ENTITY_BUSINESS_NAME 
+        description: TBD
+      - name: WORKSITE_ADDRESS1  
+        description: TBD
+      - name: WORKSITE_ADDRESS2  
+        description: TBD
+      - name: WORKSITE_CITY  
+        description: TBD
+      - name: WORKSITE_COUNTY  
+        description: TBD
+      - name: WORKSITE_STATE 
+        description: TBD
+      - name: WORKSITE_POSTAL_CODE 
+        description: TBD
+      - name: WAGE_RATE_OF_PAY_FROM  
+        description: TBD
+      - name: WAGE_RATE_OF_PAY_TO  
+        description: TBD
+      - name: WAGE_UNIT_OF_PAY 
+        description: TBD
+      - name: PREVAILING_WAGE  
+        description: TBD
+      - name: PW_UNIT_OF_PAY 
+        description: TBD
+      - name: PW_TRACKING_NUMBER 
+        description: TBD
+      - name: PW_WAGE_LEVEL  
+        description: TBD
+      - name: PW_OES_YEAR  
+        description: TBD
+      - name: PW_OTHER_SOURCE  
+        description: TBD
+      - name: PW_OTHER_YEAR  
+        description: TBD
+      - name: PW_SURVEY_PUBLISHER  
+        description: TBD
+      - name: PW_SURVEY_NAME 
+        description: TBD
+      - name: TOTAL_WORKSITE_LOCATIONS 
+        description: TBD
+      - name: AGREE_TO_LC_STATEMENT
+        description: TBD
+      - name: H1B_DEPENDENT
+        description: TBD
+      - name: WILLFUL_VIOLATOR
+        description: TBD
+      - name: SUPPORT_H1B
+        description: TBD
+      - name: STATUTORY_BASIS  
+        description: TBD
+      - name: APPENDIX_A_ATTACHED
+        description: TBD
+      - name: PUBLIC_DISCLOSURE  
+        description: TBD
+      - name: PREPARER_LAST_NAME 
+        description: TBD
+      - name: PREPARER_FIRST_NAME  
+        description: TBD
+      - name: PREPARER_MIDDLE_INITIAL  
+        description: TBD
+      - name: PREPARER_BUSINESS_NAME 
+        description: TBD
+      - name: PREPARER_EMAIL
+        description: TBD
