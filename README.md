@@ -1,6 +1,8 @@
 The H1B dataset exists in GCS and BQ on GCP analyzed via BQ and DataStudio
 
-[Dashboard | https://datastudio.google.com/reporting/1eaef0e9-eb5b-4818-94e4-d79dbc384ac9]
+Dashboard: https://datastudio.google.com/reporting/1eaef0e9-eb5b-4818-94e4-d79dbc384ac9
+
+Data source: Department of Labor (DOL) Performance Data: https://www.dol.gov/agencies/eta/foreign-labor/performance
 
 Summary reports:
 
