@@ -4,9 +4,7 @@ The H1B dataset exists in GCS and BQ on GCP analyzed via BQ and DataStudio
 
 Summary reports:
 
-(Q2 2022)
-
-Summary:
+(Q2 2022) Summary:
 
 A total of 233k cases filed in Q2 of 2022 up 55% YoY with an approval rate of 97% (total approved cases up 55% YoY). Denial rate was 0.58% (total denied cases up by 99% YoY)
 60,673 employers participated in the petition lottery in Q2 of 2022
@@ -21,9 +19,9 @@ Geography:
 
 Cities of Los Gatos and Menlo Park in California were the top cities with a base pay of $185k and $176k respectively
 States of California, Washington, and New York were the top three states with average annual base compensations of $126k, $119k, $114k respectively
-(Q1 2022)
 
-Summary:
+
+(Q1 2022) Summary:
 
 A total of 150k cases filed in Q1 of 2022 up 92% YoY with an approval rate of 98% (total approved cases up 91% YoY). Denial rate was 0.45% (total denied cases up by 183% YoY)
 38,755 employers participated in the petition lottery in Q1 of 2022
